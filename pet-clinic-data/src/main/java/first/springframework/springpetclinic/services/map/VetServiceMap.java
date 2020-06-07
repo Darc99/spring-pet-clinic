@@ -3,9 +3,10 @@ package first.springframework.springpetclinic.services.map;
 import java.util.Set;
 
 import first.springframework.springpetclinic.model.Vet;
-import first.springframework.springpetclinic.services.CrudService;
+//import first.springframework.springpetclinic.services.CrudService;
+import first.springframework.springpetclinic.services.VetService;
 
-public class VetService extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public void delete(Vet object) {
