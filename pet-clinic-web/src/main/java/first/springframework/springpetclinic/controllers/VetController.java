@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import first.springframework.springpetclinic.services.VetService;
 
+@RequestMapping("/vets")
 @Controller
 public class VetController {
     
