@@ -34,18 +34,13 @@ public class OwnerSDjpaService implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
-
         Set<Owner> owners = new HashSet<>();
-
         ownerRepository.findAll().forEach(owners::add);
-
         return owners;
-
     }
 
     @Override
     public Owner findById(Long aLong) {
-
         return ownerRepository.findById(aLong).orElse(null);
     }
 
